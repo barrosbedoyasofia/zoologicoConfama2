@@ -19,6 +19,12 @@ public class Main {
 
 
         Familia familia = new Familia();
+        familia.setNombrePapa("Charly");
+        familia.setNombreMama("Gaby");
+        familia.setNombreDelHijo("Pablito");
+        familia.setEdadPapa(600);
+
+        System.out.println("Tu edad es: "+familia.getEdadPapa());
 
     }
 }

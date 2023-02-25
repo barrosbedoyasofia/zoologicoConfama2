@@ -43,11 +43,17 @@ public class Familia {
     }
 
     public Integer getEdadPapa() {
+
         return edadPapa;
     }
 
     public void setEdadPapa(Integer edadPapa) {
-        this.edadPapa = edadPapa;
+        if (edadPapa < 0 || edadPapa > 20) {
+            System.out.println("La edad no es correcta");
+        }else {
+            this.edadPapa = edadPapa;
+        }
+
     }
 }
 
